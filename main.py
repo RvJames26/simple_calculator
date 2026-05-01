@@ -31,3 +31,6 @@ while True:
 if operation == 1:
     sum = first_num + second_num
     print(f"{first_num} + {second_num} = {answer_color}{sum}{reset_color}")
+if operation == 2:
+    difference = first_num - second_num
+    print(f"{first_num} + {second_num} = {answer_color}{difference}{reset_color}")
