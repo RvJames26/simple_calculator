@@ -10,9 +10,9 @@ while True:
                     4. Division
                     Please input the number you want to use:"""))
         if operation > 4 or operation < 1:
-            print("Please input number 1-4 only")
+            print(f"{error_color}Please input number 1-4 only{reset_color}")
             continue
         if operation > 0 and operation < 5:
             print("Successfully selected an operation")
     except ValueError:
-        print("Please input number 1-4 only")
+        print(f"{error_color}Please input number 1-4 only{reset_color}")
