@@ -30,4 +30,4 @@ while True:
 
 if operation == 1:
     sum = first_num + second_num
-    print(f)
+    print(f"{first_num} + {second_num} = {answer_color}{sum}{reset_color}")
