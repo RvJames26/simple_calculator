@@ -34,3 +34,7 @@ if operation == 1:
 if operation == 2:
     difference = first_num - second_num
     print(f"{first_num} + {second_num} = {answer_color}{difference}{reset_color}")
+if operation == 3:
+    product = first_num * second_num
+    print(f"{first_num} x {second_num} = {answer_color}{product}{reset_color}")
+if 
