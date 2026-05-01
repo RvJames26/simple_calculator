@@ -14,5 +14,11 @@ while True:
             continue
         if operation > 0 and operation < 5:
             print("Successfully selected an operation")
+            break
     except ValueError:
         print(f"{error_color}Please input number 1-4 only{reset_color}")
+
+while True:
+    try:
+        first_num = print("Please input your First Number: ")
+        second_num = print("Please input your Second Number: ")
