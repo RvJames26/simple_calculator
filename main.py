@@ -2,8 +2,8 @@ error_color = "\033[41m\033[97m"
 reset_color = "\033[0m"
 answer_color = "\033[42m"
 
-print ("Welcome to my simple Calculator")
 while True:
+    print ("Welcome to my simple Calculator")
     while True:
         try:
             operation = int(input("""What operation do you want to use:
@@ -41,4 +41,12 @@ while True:
     if operation == 4:
         quotient = first_num / second_num
         print(f"{first_num} / {second_num} = {answer_color}{quotient}{reset_color}")
-try_again = input("Do you want to try again?(y/n) ")
+
+    try_again = input("Do you want to try again?(y/n) ")
+    if try_again == "y":
+        continue
+    if try_again == "n":
+        print("Thank you!")
+        break
+    else:
+        print(f"{error_color}Please input y or n only{reset_color}")
