@@ -10,5 +10,7 @@ while True:
         if operation > 4 or operation < 1:
             print("Please input number 1-4 only")
             continue
+        if operation > 0 and operation < 5:
+            print("Successfully selected an operation")
     except ValueError:
         print("Please input number 1-4 only")
