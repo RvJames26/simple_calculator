@@ -1,5 +1,7 @@
 error_color = "\033[41m\033[97m"
 reset_color = "\033[0m"
+answer_color = "\033[42m"
+
 print ("Welcome to my simple Calculator")
 while True:
     try:
@@ -20,8 +22,12 @@ while True:
 
 while True:
     try:
-        first_num = input("Please input your First Number: ")
-        second_num = input("Please input your Second Number: ")
+        first_num = int(input("Please input your First Number: "))
+        second_num = int(input("Please input your Second Number: "))
         break
     except ValueError:
         print(f"{error_color}Input numbers only{reset_color}")
+
+if operation == 1:
+    sum = first_num + second_num
+    print(f)
