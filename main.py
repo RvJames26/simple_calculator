@@ -1,3 +1,5 @@
+error_color = "\033[41m\033[97m"
+reset_color = "\033[0m"
 print ("Welcome to my simple Calculator")
 while True:
     try:
