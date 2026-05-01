@@ -7,5 +7,8 @@ while True:
                     3. Multiplication
                     4. Division
                     Please input the number you want to use:"""))
+        if operation > 4 or operation < 1:
+            print("Please input number 1-4 only")
+            continue
     except ValueError:
-        print("Please input number 1-4")
+        print("Please input number 1-4 only")
