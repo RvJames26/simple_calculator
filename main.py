@@ -20,5 +20,8 @@ while True:
 
 while True:
     try:
-        first_num = print("Please input your First Number: ")
-        second_num = print("Please input your Second Number: ")
+        first_num = input("Please input your First Number: ")
+        second_num = input("Please input your Second Number: ")
+        break
+    except ValueError:
+        print(f"{error_color}Input numbers only{reset_color}")
