@@ -37,4 +37,6 @@ if operation == 2:
 if operation == 3:
     product = first_num * second_num
     print(f"{first_num} x {second_num} = {answer_color}{product}{reset_color}")
-if 
+if operation == 4:
+    quotient = first_num / second_num
+    print(f"{first_num} / {second_num} = {answer_color}{quotient}{reset_color}")
