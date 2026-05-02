@@ -1,4 +1,4 @@
-class Numbers:
+class Number:
 
     def get_numbers(self):
         while True:
