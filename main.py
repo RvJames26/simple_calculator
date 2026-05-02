@@ -1,9 +1,9 @@
 class Calculator:
 
     def __init__(self):
-        error_color = "\033[41m\033[97m"
-        reset_color = "\033[0m"
-        answer_color = "\033[42m"
+        self.error_color = "\033[41m\033[97m"
+        self.reset_color = "\033[0m"
+        self.answer_color = "\033[42m"
 
     def picking_operator(self):
         while True:
