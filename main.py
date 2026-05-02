@@ -42,11 +42,18 @@ while True:
         quotient = first_num / second_num
         print(f"{first_num} / {second_num} = {answer_color}{quotient}{reset_color}")
 
-    try_again = input("Do you want to try again?(y/n) ")
+    while True:
+        try_again = input("Do you want to try again?(y/n) ")
+        if try_again == "y":
+            break
+        if try_again == "n":
+            print("Thank you!")
+            break
+        else:
+            print(f"{error_color}Please input y or n only{reset_color}")
+            continue
+
     if try_again == "y":
         continue
     if try_again == "n":
-        print("Thank you!")
         break
-    else:
-        print(f"{error_color}Please input y or n only{reset_color}")
