@@ -17,13 +17,13 @@ class Calculator:
                                 4. Division
                                 Please input the number you want to use:"""))
                     if operation > 4 or operation < 1:
-                        print(f"{error_color}Please input number 1-4 only{reset_color}")
+                        print(f"{self.error_color}Please input number 1-4 only{self.reset_color}")
                         continue
                     if operation > 0 and operation < 5:
                         print("Successfully selected an operation")
                         break
                 except ValueError:
-                    print(f"{error_color}Please input number 1-4 only{reset_color}")
+                    print(f"{self.error_color}Please input number 1-4 only{self.reset_color}")
 
     def get_numbers(self):
         while True:
@@ -32,21 +32,21 @@ class Calculator:
                 second_num = int(input("Please input your Second Number: "))
                 break
             except ValueError:
-                print(f"{error_color}Input numbers only{reset_color}")
+                print(f"{self.error_color}Input numbers only{self.reset_color}")
 
     def doing_math(self):
         if operation == 1:
             sum = first_num + second_num
-            print(f"{first_num} + {second_num} = {answer_color}{sum}{reset_color}")
+            print(f"{first_num} + {second_num} = {self.answer_color}{sum}{self.reset_color}")
         if operation == 2:
             difference = first_num - second_num
-            print(f"{first_num} - {second_num} = {answer_color}{difference}{reset_color}")
+            print(f"{first_num} - {second_num} = {self.answer_color}{difference}{self.reset_color}")
         if operation == 3:
             product = first_num * second_num
-            print(f"{first_num} x {second_num} = {answer_color}{product}{reset_color}")
+            print(f"{first_num} x {second_num} = {self.answer_color}{product}{self.reset_color}")
         if operation == 4:
             quotient = first_num / second_num
-            print(f"{first_num} / {second_num} = {answer_color}{quotient}{reset_color}")
+            print(f"{first_num} / {second_num} = {self.answer_color}{quotient}{self.reset_color}")
 
     def again(self):
         while True:
@@ -57,7 +57,7 @@ class Calculator:
                 print("Thank you!")
                 break
             else:
-                print(f"{error_color}Please input y or n only{reset_color}")
+                print(f"{self.error_color}Please input y or n only{self.reset_color}")
                 continue
 
         if try_again == "y":
