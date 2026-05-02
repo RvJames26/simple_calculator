@@ -6,7 +6,6 @@ class Calculator:
         self.answer_color = "\033[42m"
 
     def picking_operator(self):
-        while True:
             print ("Welcome to my simple Calculator")
             while True:
                 try:
