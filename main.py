@@ -7,18 +7,19 @@ class Calculator:
 
     def picking_operator(self):
             print ("Welcome to my simple Calculator")
+
             while True:
                 try:
-                    operation = int(input("""What operation do you want to use:
+                    self.operation = int(input("""What operation do you want to use:
                                 1. Addition
                                 2. Subtraction
                                 3. Multiplication
                                 4. Division
                                 Please input the number you want to use:"""))
-                    if operation > 4 or operation < 1:
+                    if self.operation > 4 or self.operation < 1:
                         print(f"{self.error_color}Please input number 1-4 only{self.reset_color}")
                         continue
-                    if operation > 0 and operation < 5:
+                    if self.operation > 0 and self.operation < 5:
                         print("Successfully selected an operation")
                         break
                 except ValueError:
@@ -27,8 +28,8 @@ class Calculator:
     def get_numbers(self):
         while True:
             try:
-                first_num = int(input("Please input your First Number: "))
-                second_num = int(input("Please input your Second Number: "))
+                self.first_num = int(input("Please input your First Number: "))
+                self.second_num = int(input("Please input your Second Number: "))
                 break
             except ValueError:
                 print(f"{self.error_color}Input numbers only{self.reset_color}")
