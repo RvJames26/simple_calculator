@@ -5,25 +5,27 @@ class Calculator:
         reset_color = "\033[0m"
         answer_color = "\033[42m"
 
-    while True:
-        print ("Welcome to my simple Calculator")
+    def picking_operator(self):
         while True:
-            try:
-                operation = int(input("""What operation do you want to use:
-                            1. Addition
-                            2. Subtraction
-                            3. Multiplication
-                            4. Division
-                            Please input the number you want to use:"""))
-                if operation > 4 or operation < 1:
+            print ("Welcome to my simple Calculator")
+            while True:
+                try:
+                    operation = int(input("""What operation do you want to use:
+                                1. Addition
+                                2. Subtraction
+                                3. Multiplication
+                                4. Division
+                                Please input the number you want to use:"""))
+                    if operation > 4 or operation < 1:
+                        print(f"{error_color}Please input number 1-4 only{reset_color}")
+                        continue
+                    if operation > 0 and operation < 5:
+                        print("Successfully selected an operation")
+                        break
+                except ValueError:
                     print(f"{error_color}Please input number 1-4 only{reset_color}")
-                    continue
-                if operation > 0 and operation < 5:
-                    print("Successfully selected an operation")
-                    break
-            except ValueError:
-                print(f"{error_color}Please input number 1-4 only{reset_color}")
 
+    def get_numbers(self):
         while True:
             try:
                 first_num = int(input("Please input your First Number: "))
@@ -32,6 +34,7 @@ class Calculator:
             except ValueError:
                 print(f"{error_color}Input numbers only{reset_color}")
 
+    def doing_math(self):
         if operation == 1:
             sum = first_num + second_num
             print(f"{first_num} + {second_num} = {answer_color}{sum}{reset_color}")
@@ -45,6 +48,7 @@ class Calculator:
             quotient = first_num / second_num
             print(f"{first_num} / {second_num} = {answer_color}{quotient}{reset_color}")
 
+    def again(self):
         while True:
             try_again = input("Do you want to try again?(y/n) ")
             if try_again == "y":
