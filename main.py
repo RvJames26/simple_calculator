@@ -14,7 +14,7 @@ class Calculator:
                                 1. Addition
                                 2. Subtraction
                                 3. Multiplication
-                                4. Division
+                                4. Divisions
                                 Please input the number you want to use:"""))
                     if self.operation > 4 or self.operation < 1:
                         print(f"{self.error_color}Please input number 1-4 only{self.reset_color}")
