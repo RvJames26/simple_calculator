@@ -69,3 +69,6 @@ class Calculator:
 
             if loop == False:
                 break
+
+calcu = Calculator()
+calcu.run()
