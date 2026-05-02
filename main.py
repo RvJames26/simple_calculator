@@ -52,15 +52,9 @@ class Calculator:
         while True:
             try_again = input("Do you want to try again?(y/n) ")
             if try_again == "y":
-                break
+                return True
             if try_again == "n":
                 print("Thank you!")
-                break
+                return False
             else:
                 print(f"{self.error_color}Please input y or n only{self.reset_color}")
-                continue
-
-        if try_again == "y":
-            continue
-        if try_again == "n":
-            break
