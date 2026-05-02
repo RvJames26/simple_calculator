@@ -35,18 +35,18 @@ class Calculator:
                 print(f"{self.error_color}Input numbers only{self.reset_color}")
 
     def doing_math(self):
-        if operation == 1:
-            sum = first_num + second_num
-            print(f"{first_num} + {second_num} = {self.answer_color}{sum}{self.reset_color}")
-        if operation == 2:
-            difference = first_num - second_num
-            print(f"{first_num} - {second_num} = {self.answer_color}{difference}{self.reset_color}")
-        if operation == 3:
-            product = first_num * second_num
-            print(f"{first_num} x {second_num} = {self.answer_color}{product}{self.reset_color}")
-        if operation == 4:
-            quotient = first_num / second_num
-            print(f"{first_num} / {second_num} = {self.answer_color}{quotient}{self.reset_color}")
+        if self.operation == 1:
+            sum = self.first_num + self.second_num
+            print(f"{self.first_num} + {self.second_num} = {self.answer_color}{sum}{self.reset_color}")
+        if self.operation == 2:
+            difference = self.first_num - self.second_num
+            print(f"{self.first_num} - {self.second_num} = {self.answer_color}{difference}{self.reset_color}")
+        if self.operation == 3:
+            product = self.first_num * self.second_num
+            print(f"{self.first_num} x {self.second_num} = {self.answer_color}{product}{self.reset_color}")
+        if self.operation == 4:
+            quotient = self.first_num / self.second_num
+            print(f"{self.first_num} / {self.second_num} = {self.answer_color}{quotient}{self.reset_color}")
 
     def again(self):
         while True:
