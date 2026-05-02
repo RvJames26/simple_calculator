@@ -58,3 +58,14 @@ class Calculator:
                 return False
             else:
                 print(f"{self.error_color}Please input y or n only{self.reset_color}")
+
+    def run(self):
+        while True:
+            self.picking_operator()
+            self.get_numbers()
+            self.doing_math()
+            
+            loop = self.again()
+
+            if loop == False:
+                break
