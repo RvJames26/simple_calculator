@@ -1,8 +1,9 @@
 class Calculator:
 
-    error_color = "\033[41m\033[97m"
-    reset_color = "\033[0m"
-    answer_color = "\033[42m"
+    def __init__(self):
+        error_color = "\033[41m\033[97m"
+        reset_color = "\033[0m"
+        answer_color = "\033[42m"
 
     while True:
         print ("Welcome to my simple Calculator")
